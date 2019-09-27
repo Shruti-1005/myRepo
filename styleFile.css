@@ -1,0 +1,246 @@
+  .bgImg {
+      height: 360px !important;
+     filter: grayscale(100%);
+     position: absolute;
+   }
+   
+  .checked{color:orange;}
+
+  .fa-star{font-size:10px !important;}
+
+  .vertical-align-middle{vertical-align:middle !important;}
+
+  .overlapedImg{   
+    position: relative;
+     filter: brightness(0.5);
+}
+
+  .orangeButton{
+    font-size: 10px;
+    font-weight: bold;
+    background-color: orange;
+    border-color: orange;
+  }
+  .whiteButton{
+    font-size: 10px;
+    font-weight: bold;
+    background-color: white;
+    border-color: white;
+  }
+
+  .imgBox{
+    background-color: white;
+    height: 200px;
+    width:150px;
+    padding:0px;
+    margin: 10px auto;
+  }
+
+    .padding-10px{padding:10px;}
+
+    .padding-0px{padding:0px;}
+
+    .padding-0px-10px{padding: 0px 10px;}
+
+    .margin-right-5px{margin-right: 5px;}
+
+   .carousel-caption {
+     position: absolute;
+     height: 360px !important;
+     width: 80% !important;
+     float: inherit;
+     display: block;
+     left: 10% !important;
+    /* background-blend-mode: color !important;
+     background: linear-gradient(to right, #be2d09, #faf8f7);*/
+     color: white;
+     bottom: 0px;
+   }
+
+   .innerImage{
+     height: 310px !important;
+     width:150px;
+     filter: grayscale(0);
+     margin-top: 25px;
+     margin-left: -50px;
+   }
+
+  .colorOrange{ color: orange;}
+  .fontSize-10px{ font-size: 10px !important;}
+  .fontSize-11px{ font-size: 11px;}
+  .fontSize-12px{ font-size: 12px;}
+  .img-circle{border-radius: 90%;}
+  .margin-bottom-5px{ margin-bottom: 5px;}
+  .margin-top-5px{ margin-top: 5px;}
+
+
+  .margin-auto{margin: auto;}
+
+  .text-wraper{
+   max-width: 120px !important;
+   word-break: break-word;
+   overflow: hidden;
+   white-space: nowrap;
+   word-break: break-word;
+   text-overflow: ellipsis;
+ }
+
+ .progress {
+  width: 150px;
+  height: 150px;
+  background: none;
+  position: relative;
+}
+
+.progress::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 5px solid #eee;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progress>span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.progress .progress-left {
+  left: 0;
+}
+
+.progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 5px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+}
+
+.progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+
+.progress .progress-right {
+  right: 0;
+}
+
+.progress .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+}
+
+.progress .progress-value {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.borderColorOrange{
+  border-Color:orange;
+}
+
+.rounded-lg {
+  border-radius: 1rem;
+}
+
+.text-gray {
+  color: #aaa;
+}
+
+div.h4 {
+  line-height: 1rem;
+}
+
+.ellipseButton{
+  border-radius: 20% !important;
+  font-size: 10px;
+  font-weight: 900 !important;
+}
+
+.nav.navbar-nav{
+  display: -webkit-inline-box;
+  margin: 5px;
+}
+
+.nav>li{ 
+  font-size: 10px;
+  margin: 3px 5px;
+  font-weight: bold;
+}
+
+a{color:black !important;}
+
+.yellowLink{
+  color: black;
+  background-color: goldenrod;
+  font-weight: bold;
+  font-size: 10px;
+  padding: 5px;
+  border-radius: 15%;
+}
+
+.allButton{
+  margin-top: -5px;
+  font-size: 10px;
+  height: 20px;
+  margin-left: -3px;
+  background-color: white;
+}
+
+
+.searchBox{
+  height: 20px;
+  font-size: 10px;
+  margin: -5px 0;
+  padding: 2px;
+}
+
+.caret-down-button{
+  margin-top: -5px;
+    margin-left: -2px;
+    height: 20px;
+    font-size: 12px;
+    padding-top: 4px;
+    background-color: white;
+  }
+
+  .iconStyle{
+    font-size: 16px !important;
+    margin: 0px 7px;
+  }
+  @media only screen and (max-width: 400px) {
+    .orangeButton{
+      display: none;
+    }
+    .whiteButton{
+      display: none;
+    }
+    }
+    @media only screen and (min-width: 400px) {
+      .orangeButton{
+        margin-top: 20px;
+       }
+      .whiteButton{
+        margin-top: 20px;
+      }
+   }
+  

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Assignment - Bootstrap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Bootstrap/styleFile.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-star-rating/4.0.2/css/star-rating.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-star-rating/4.0.2/js/star-rating.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>$(function() {
+
+      $(".progress").each(function() {
+    
+        var value = $(this).attr('data-value');
+        var left = $(this).find('.progress-left .progress-bar');
+        var right = $(this).find('.progress-right .progress-bar');
+    
+        if (value > 0) {
+          if (value <= 50) {
+            right.css('transform', 'rotate(' + percentageToDegrees(value) + 'deg)')
+          } else {
+            right.css('transform', 'rotate(180deg)')
+            left.css('transform', 'rotate(' + percentageToDegrees(value - 50) + 'deg)')
+          }
+        }
+    
+      })
+    
+      function percentageToDegrees(percentage) {
+    
+        return percentage / 100 * 360
+    
+      }
+    
+    });
+    </script>
+  </head>
+  <body style="background-color: lightgray;">
+   <div class="container-fluid clearfix" style="margin: 0px -15px;">
+    <div style="display: inline-block; width:100%;" class="clearfix">
+      <ul class="nav navbar-nav clearfix">
+        <li><a href="#" class="yellowLink">Imob</a></li>
+        <li><a href="#">MOVIES</a></li>
+        <li><a href="#">TV SERIES</a></li>
+        <li><a href="#">NEWS</a></li>
+        <li><a href="#">PHOTOS</a></li>
+        <li><a href="#">EVENTS</a></li>
+        <li><a href="#">TRAILERS</a></li>
+      </ul>
+      <ul class="nav navbar-nav clearfixd d-none d-md-block" style="float:right">
+          <li>
+              <form class="form-inline clearfix">
+                  <div class="input-group">
+                   <input type="text" class="form-control searchBox" placeholder="Find Movie,TV shows..">
+                    <span class="input-group-text allButton">All</span>
+                    <span class="input-group-text  fa fa-caret-down caret-down-button"></span>
+                    <span class="input-group-text  fa fa-search caret-down-button" style="background-color: gray;"></span>
+                  </div>
+                  <span class="fa fa-bookmark iconStyle"></span>
+                  <span class="fa fa-life-buoy iconStyle"></span>
+                  <span>
+                    <img src="..\Bootstrap\movie1-cast4.jpeg"  class="img-circle" alt="Photo" width="20px" height="20px" style="margin: 0px 7px;">
+                  </span>
+                </form>
+          </li>
+        </ul>
+      </div>
+
+    <hr class="d-block d-md-none" style="margin: 0px;">
+
+    <div class="d-block d-md-none display: inline-block clearfix">
+      <ul class="nav navbar-nav clearfix">
+        <li >
+            <form class="form-inline clearfix">
+                <div class="input-group" style="width: 65% !important;">
+                 <input type="text" class="form-control searchBox" placeholder="Find Movie,TV shows..">
+                  <span class="input-group-text allButton">All</span>
+                  <span class="input-group-text  fa fa-caret-down caret-down-button"></span>
+                  <span class="input-group-text  fa fa-search caret-down-button" style="background-color: gray;"></span>
+                </div>
+                <span class="fa fa-bookmark iconStyle"></span>
+                <span class="fa fa-life-buoy iconStyle"></span>
+                <span>
+                  <img src="..\Bootstrap\movie1-cast4.jpeg"  class="img-circle" alt="Photo" width="20px" height="20px" style="margin: 0px 7px;">
+                </span>
+              </form>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="movies" class="carousel slide clearfix" data-ride="carousel">
+   <div class="carousel-inner clearfix">
+    <div class="carousel-item active clearfix">
+      <img src="..\Bootstrap\movie1.jpeg" class="mx-auto d-block bgImg" alt="Abominable" width="100%" height="35%">
+      <img src="..\Bootstrap\movie1.jpeg" width="80%" height="360px" class="mx-auto d-block overlapedImg">
+     
+      <div class="carousel-caption clearfix">
+        <div class="row" style="margin-top: -20px;margin-left: 0px; margin-right: 0px;">
+          <div class="col-xs-9 col-md-9 col-sm-9 col-lg-9" style="text-align: left;">
+              <h5 class="margin-top-5px">Abominable</h5>
+              <p class="fontSize-10px fa fa-clock-o"><span class="fontSize-10px"> 137mins</span>   
+                <span class="vertical-align-middle fontSize-10px">*</span>   
+                <span class="fontSize-10px"> Animation Adventure Comedy  <span class="fa fa-calendar fontSize-10px"> 27 Sep, 2019</span></span>
+              </p>
+              <div class="row" style="margin: 5px;">
+                <div class="col-xs-3 col-md-3 col-lg-3 col-sm-3 clearfix">
+                    <!-- Progress bar 2 -->
+                  <div class="progress mx-auto" style="width:60px; height:60px;margin-top: -12px;" data-value='80'>
+                    <span class="progress-left">
+                      <span class="progress-bar borderColorOrange"></span>
+                    </span>
+                    <span class="progress-right">
+                     <span class="progress-bar borderColorOrange"></span>
+                    </span>
+                    <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                      <div class="h5 font-weight-bold">8.7</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-9 col-md-9 col-lg-9 col-sm-9 padding clearfix">
+                  <div class="fontSize-10px">Your rating:
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    8/10
+                  </div>
+                    
+                  <div class="fontSize-10px clearfix">Ratings:8/10 from 1252users Metascore:89/100</div>
+                  <div class="fontSize-10px clearfix">Reviews:697user <span class="vertical-align-middle">*</span>  <span></span>  45from Metacritic.com</div>
+                </div>
+              </div>
+              <p class="fontSize-12px margin-bottom-5px clearfix">Summary</p>
+              <p class="fontSize-10px clearfix">Film’s focus on its visual dazzle and it sensitivity towards nature and family.</p>
+              
+              <div class="fontSize-11px clearfix">Director: 
+                <span class="colorOrange">George Miller</span> 
+                  *  Writter: 
+                  <span class="colorOrange"> Geroge Miller, Nick Lath</span>
+                  <span class="text-wraper">
+                * Stars:
+                  <img src="..\Bootstrap\movi1-cast1.jpeg"  class="img-circle" alt="Star1" width="20px" height="20px">
+                  <img src="..\Bootstrap\movie1-cast2.jpeg"  class="img-circle" alt="Star2" width="20px" height="20px">
+                  <img src="..\Bootstrap\movi1-cast3.jpeg"  class="img-circle" alt="Star3" width="20px" height="20px">
+                  <img src="..\Bootstrap\movie1-cast4.jpeg"  class="img-circle" alt="Star4" width="20px" height="20px">
+                  <button class="ellipseButton"><sup>...</sup></button>
+                </span>
+              </div>
+
+              <button class="orangeButton clearfix ">
+                <span class="fa fa-plus margin-right-5px fontSize-10px"></span>WATCHLIST
+                <span class="fa fa-caret-down margin-right-5px fontSize-10px"></span>
+              </button>
+              <button class="whiteButton clearfix"><span class="fa fa-caret-right margin-right-5px fontSize-10px"></span>WATCHLIST</button>
+            </div>
+            <div class="col-xs-3 col-md-3 col-sm-3 col-lg-3 d-none d-sm-block clearfix">
+              <img src="..\Bootstrap\movie1.jpeg" class="innerImage" alt="Abominable" width="100%">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item clearfix">
+          <img src="..\Bootstrap\movi2.jpeg" class="mx-auto d-block bgImg clearfix" alt="Pokemon Detective Pikachu" width="100%" height="35%">
+          <img src="..\Bootstrap\movi2.jpeg" width="80%" height="360px" class="mx-auto d-block overlapedImg clearfix">
+          
+          <div class="carousel-caption clearfix">
+            <div class="row clearfix" style="margin-top: -20px;margin-left: 0px; margin-right: 0px;">
+              <div class="col-xs-9 col-md-9 col-sm-9 col-lg-9 clearfix" style="text-align: left;">
+                  <h5 class="margin-top-5px ">Pokemon Detective Pikachu</h5>
+                  <p class="fontSize-10px fa fa-clock-o"><span class="fontSize-10px"> 156mins</span>  
+                    <span class="vertical-align-middle fontSize-10px">*</span>   
+                   <span class="fontSize-10px"> Animation Family Fantasy </span> <span class="fa fa-calendar fontSize-10px"> 27 Sep, 2019</span>
+                  </p>
+
+                  <div class="row " style="margin: 5px;">
+                      <div class="col-xs-3 col-md-3 col-lg-3 col-sm-3 clearfix">
+                          <!-- Progress bar 2 -->
+                        <div class="progress mx-auto" style="width:60px; height:60px;margin-top: -12px;" data-value='60'>
+                          <span class="progress-left">
+                            <span class="progress-bar borderColorOrange"></span>
+                          </span>
+                          <span class="progress-right">
+                           <span class="progress-bar borderColorOrange"></span>
+                          </span>
+                          <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                            <div class="h5 font-weight-bold">6.4</div>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="col-xs-9 col-md-9 col-lg-9 col-sm-9 padding-0px clearfix">
+                        <div class="fontSize-10px">Your rating:
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star "></span>
+                          <span class="fa fa-star "></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          6/10
+                        </div>
+                        
+                        <div class="fontSize-10px clearfix">Ratings:6/10 from 1552users Metascore:61/100</div>
+                        <div class="fontSize-10px clearfix">Reviews:987user 
+                          <span class="vertical-align-middle">*</span>   
+                          65from Metacritic.com
+                        </div>
+                      </div>
+                    </div>
+                    <p class="fontSize-12px margin-bottom-5px">Summary</p>
+                    <p class="fontSize-10px clearfix">Ryan Reynolds infuses the tiny, yellow, rodent-like creature with a distinct personality.</p>
+
+                    <div class="fontSize-11px clearfix">Director: 
+                        <span class="colorOrange">George Miller</span> 
+                          *  Writter: 
+                          <span class="colorOrange"> Geroge Miller, Nick Lath</span>
+                          <span class="text-wraper">
+                        * Stars:
+                          <img src="..\Bootstrap\movi1-cast1.jpeg"  class="img-circle" alt="Star1" width="20px" height="20px">
+                          <img src="..\Bootstrap\movie1-cast2.jpeg"  class="img-circle" alt="Star2" width="20px" height="20px">
+                          <img src="..\Bootstrap\movi1-cast3.jpeg"  class="img-circle" alt="Star3" width="20px" height="20px">
+                          <img src="..\Bootstrap\movie1-cast4.jpeg"  class="img-circle" alt="Star4" width="20px" height="20px">
+                          <button class="ellipseButton"><sup>...</sup></button>
+                        </span>
+                      </div>
+              
+                  <button class="orangeButton  ">
+                    <span class="fa fa-plus margin-right-5px fontSize-10px"></span>
+                    WATCHLIST
+                    <span class="fa fa-caret-down margin-right-5px fontSize-10px"></span>
+                  </button>
+                  <button class="whiteButton "><span class="fa fa-caret-right margin-right-5px fontSize-10px"></span>WATCHLIST</button>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3 col-lg-3 d-none d-sm-block clearfix">
+                  <img src="..\Bootstrap\movi2.jpeg" class="innerImage" alt="Pokemon Detective Pikachu" width="100%">
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+  <hr style="margin-top: 0px;border: 1px solid orange;">
+
+  <div class="container clearfix">
+    <div class="row margin-auto">
+      <div class="fontSize-10px font-weight-bold">NOW PLAYING<span class="vertical-align-middle">  *  </span>
+        <span class="fontSize-10px">BOX OFFICE</span>
+      </div>
+  </div>
+  <div class="container-fluid clearfix">
+  <div class="row margin-auto clearfix">
+    <div class="col-xs-3 col-sm-2 col-md-2 col-lg-2 imgBox clearfix">
+      <img src="..\Bootstrap\movie1.jpeg" width='100%' height='80%' class="padding-10px">
+      <div class="fontSize-12px font-weight-bold padding-0px-10px text-wraper">Movie 1</div>
+      <div class="fontSize-10px padding-0px-10px">$123</div>
+    </div>
+
+    <div class="col-xs-3 col-sm-2 col-md-2 col-lg-2 imgBox clearfix">
+      <img src="..\Bootstrap\movi2.jpeg" width='100%' height='80%' class="padding-10px">
+      <div class="fontSize-12px font-weight-bold padding-0px-10px text-wraper">Movie 2</div>
+      <div class="fontSize-10px padding-0px-10px">$123</div>
+    </div>
+
+    <div class="col-xs-3 col-sm-2 col-md-2 col-lg-2 imgBox clearfix">
+       <img src="..\Bootstrap\movie1.jpeg" width='100%' height='80%' class="padding-10px">
+       <div class="fontSize-12px font-weight-bold padding-0px-10px text-wraper">Movie 3</div>
+       <div class="fontSize-10px padding-0px-10px">$123</div>
+     </div>
+
+      <div class="col-xs-3 col-sm-2 col-md-2 col-lg-2 imgBox clearfix">
+        <img src="..\Bootstrap\movi2.jpeg" width='100%' height='80%' class="padding-10px">
+        <div class="fontSize-12px font-weight-bold padding-0px-10px text-wraper">Movie 4</div>
+        <div class="fontSize-10px padding-0px-10px">$123</div>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+</body>
+</html>
